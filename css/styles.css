@@ -198,7 +198,7 @@ header nav .nav-btn {
   margin: 3px;
 }
 header nav .nav-btn.git {
-  
+  background-image: url(../images/git.png);
 }
 header nav .nav-btn.codepen {
   background-image: url(../images/codepen.png);
