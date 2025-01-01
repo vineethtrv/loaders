@@ -365,7 +365,7 @@ footer a:hover {
 .copy {
   outline: 0;
   border: none;
-  background: #000;
+  background: hsl(var(--brand-hue), var(--brand-saturation), 30%);
   position: absolute;
   right: 5px;
   top: 50%;
