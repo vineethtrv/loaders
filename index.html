@@ -62,6 +62,9 @@
         <nav>
             <a class="nav-btn codepen" target="_blank" href="https://codepen.io/vineethtrv/pen/NWxZqMM"></a>
             <a class="nav-btn git" target="_blank" href="https://github.com/vineethtrv/css-loader"></a>
+            <a href="javascript:void(0)"><button onclick="toggleTheme()">
+    <i id="theme-icon">☀️</i>
+  </button></a>
         </nav>
     </header>
 
@@ -102,12 +105,20 @@
     </div>
     <script>
       const themes = ['light', 'dark', 'dim'];
+    const icons = ['☀️', '🌙', '🌑']; // Light, Dark, Dim icons
     let currentThemeIndex = 0;
 
     function toggleTheme() {
+      // Update theme index
       currentThemeIndex = (currentThemeIndex + 1) % themes.length;
       const selectedTheme = themes[currentThemeIndex];
+
+      // Update color-scheme
       document.documentElement.setAttribute('color-scheme', selectedTheme);
+
+      // Update icon
+      const themeIcon = document.getElementById('theme-icon');
+      themeIcon.textContent = icons[currentThemeIndex];
     }
     </script>
     <script  type="module" src="./js/app.js"></script>
