@@ -356,7 +356,7 @@ footer a:hover {
   color: #fff;
   font-size: 14px;
   position: relative;
-  border-radius: 0 0 2px 2px;
+  border-radius: 2px 2px 0 0;
 }
 .code-area + .code-area {
   margin-top: 10px;
