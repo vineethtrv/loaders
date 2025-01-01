@@ -201,7 +201,7 @@ header nav .nav-btn {
   text-align: center;
   font-size: 28px;
   line-height: 32px;
-  color: var(--brand);
+  color: var(--text2);
 }
 header nav .nav-btn + .nav-btn {
   margin-left: 10px;
