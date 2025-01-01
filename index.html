@@ -101,7 +101,7 @@
     </div>
     <script>
       const themes = ['light', 'dark', 'dim'];
-    const icons = ['☀️', '🌙', '🌑']; // Light, Dark, Dim icons
+    const icons = ['uil-sun', 'uil-moon', 'uil-bright']; // Light, Dark, Dim Unicons
     let currentThemeIndex = 0;
 
     function toggleTheme() {
@@ -114,7 +114,7 @@
 
       // Update icon
       const themeIcon = document.getElementById('theme-icon');
-      themeIcon.textContent = icons[currentThemeIndex];
+      themeIcon.className = `uil ${icons[currentThemeIndex]}`;
     }
     </script>
     <script  type="module" src="./js/app.js"></script>
