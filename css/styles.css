@@ -199,8 +199,9 @@ header nav .nav-btn {
 header nav .nav-btn {
   text-decoration: none;
   text-align: center;
-  font-size: 18px;
+  font-size: 28px;
   line-height: 32px;
+  color: var(--brand);
 }
 header nav .nav-btn + .nav-btn {
   margin-left: 10px;
