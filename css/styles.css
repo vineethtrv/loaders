@@ -202,7 +202,7 @@ header nav .nav-btn.git {
 header nav .nav-btn.codepen {
   background-image: url(../images/codepen.png);
 }
-header nav .nav-btn + .nav-btn {
+header nav .nav-btn + .nav-btn + .theme{
   margin-left: 10px;
 }
 .brand {
