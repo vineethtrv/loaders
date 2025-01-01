@@ -203,9 +203,6 @@ header nav .nav-btn {
   line-height: 32px;
   color: var(--text2);
 }
-header nav .nav-btn i {
-  -webkit-text-stroke: 1px #6200ee;
-}
 header nav .nav-btn + .nav-btn {
   margin-left: 10px;
 }
