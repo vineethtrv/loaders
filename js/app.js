@@ -94,7 +94,7 @@ document.querySelectorAll('.copy').forEach(copyBtn => {
         document.execCommand("copy");
         e.target.textContent = 'Copied';
 
-        setTimeout( time => e.target.textContent = 'Copy' , 300);
+        setTimeout( time => e.target.textContent = 'Copy' , 1000);
     })
 });
 
