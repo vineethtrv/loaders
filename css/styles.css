@@ -374,6 +374,19 @@ footer a:hover {
   cursor: pointer;
   user-select: none;
 }
+.copy::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 12px;
+  border: 1px solid #fff;
+  box-shadow:
+    2px -2px #000,
+    3px -3px;
+  margin-right: 8px;
+  position: relative;
+  top: 3px;
+}
 code {
   background: #000;
   padding: 5px 10px;
