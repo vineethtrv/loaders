@@ -196,14 +196,11 @@ header nav .nav-btn {
   background-position: center;
   border-radius: 50%;
 }
-header nav i {
+header nav .nav-btn {
   text-decoration: none;
   text-align: center;
   font-size: 18px;
   line-height: 32px;
-}
-header nav .nav-btn.theme {
-  font-size: 18px;
 }
 header nav .nav-btn + .nav-btn {
   margin-left: 10px;
