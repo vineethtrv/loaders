@@ -159,7 +159,7 @@ html {
 }
 body {
   margin: 0;
-  background: var(surface1);
+  background: var(--surface1);
   font-family: Arial, Helvetica, sans-serif;
 }
 body > img {
@@ -169,7 +169,7 @@ body.pop {
   overflow: hidden;
 }
 header {
-  background: #0d161b;
+  background: var(--surface2);
   padding: 10px 20px;
   min-height: 50px;
   width: 100%;
@@ -189,7 +189,8 @@ header nav .nav-btn {
   display: inline-block;
   width: 32px;
   height: 32px;
-  background-color: #fff;
+  background-color: var(--surface4);
+  border: 1px solid hsl(var(--brand-hue) 10% 50% / 15%);
   background-repeat: no-repeat;
   background-size: 110% auto;
   background-position: center;
