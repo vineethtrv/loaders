@@ -1,16 +1,17 @@
 import { BUBBLE } from './loaders/bubble.js';
-import { CIRCLE } from './loaders/circle.js';
-import { RECT } from './loaders/rect.js';
-import { LINE } from './loaders/line.js';
-import { PROGRESS } from './loaders/progress.js';
-import { TEXT } from './loaders/text.js';
-import { GRAPH } from './loaders/graph.js';
-import { OBJECTS } from './loaders/objects.js';
-import { SKELETON } from './loaders/skeleton.js';
+// import { CIRCLE } from './loaders/circle.js';
+// import { RECT } from './loaders/rect.js';
+// import { LINE } from './loaders/line.js';
+// import { PROGRESS } from './loaders/progress.js';
+// import { TEXT } from './loaders/text.js';
+// import { GRAPH } from './loaders/graph.js';
+// import { OBJECTS } from './loaders/objects.js';
+// import { SKELETON } from './loaders/skeleton.js';
 
 
 
-const LOADERS = [...CIRCLE, ...BUBBLE, ...RECT, ...LINE, ...PROGRESS, ...TEXT, ...OBJECTS, ...GRAPH , ...SKELETON ];
+const LOADERS = [...BUBBLE ];
+// const LOADERS = [...CIRCLE, ...BUBBLE, ...RECT, ...LINE, ...PROGRESS, ...TEXT, ...OBJECTS, ...GRAPH , ...SKELETON ];
 
 
 const main = document.getElementById('main');
