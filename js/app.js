@@ -73,7 +73,14 @@ document.querySelectorAll('#main .section').forEach(elm => {
     })
 })
 
-Prism.highlightAll();
+document.querySelector('.overlay').addEventListener('click', function() {
+  modal.style.display = 'block';
+
+  // Initialize Prism highlighting after modal is shown
+  Prism.highlightAll();
+});
+
+
 // close popup
 document.querySelector('.btn-close').addEventListener('click', (e) => {
     document.querySelector('body').classList.remove('pop')
