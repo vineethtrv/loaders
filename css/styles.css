@@ -195,6 +195,7 @@ header nav .nav-btn {
   background-size: 110% auto;
   background-position: center;
   border-radius: 50%;
+  margin: 3px;
 }
 header nav .nav-btn.git {
   background-image: url(../images/git.png);
