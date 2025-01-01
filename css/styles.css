@@ -325,7 +325,7 @@ footer a:hover {
 .popup {
   position: relative;
   transform: translateY(-20px);
-  background: #fff;
+  background: var(--text2);
   padding: 20px 15px;
   max-width: 600px;
   min-height: 400px;
