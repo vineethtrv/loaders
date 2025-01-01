@@ -73,7 +73,7 @@ document.querySelectorAll('#main .section').forEach(elm => {
     })
 })
 
-
+Prism.highlightAll();
 // close popup
 document.querySelector('.btn-close').addEventListener('click', (e) => {
     document.querySelector('body').classList.remove('pop')
