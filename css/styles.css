@@ -169,7 +169,7 @@ body.pop {
   overflow: hidden;
 }
 header {
-  background: var(--surface1);
+  background: var(--brand);
   padding: 10px 20px;
   min-height: 50px;
   width: 100%;
