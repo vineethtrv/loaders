@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" color-scheme="light">
 <head>
     <meta charset="UTF-8">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -11,7 +11,6 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS loaders and Spinners</title>
-
     <!-- Search Engine -->
     <meta name="title" content="CSS loaders and spinner">
     <meta name="description" content="CSS Loader is a collection of different types of loaders, spinners and their source code. There are no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too.">
@@ -40,9 +39,8 @@
     <meta name="twitter:creator" content="@vineethtrv">
     <meta name="twitter:image:src" content="https://cssloaders.github.io/images/Loader-screen.png">
 
-    <link rel="stylesheet" href="css/styles.css">
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="css/styles.css?v1.1">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4F1SESL3HZ"></script>
     <script>
@@ -58,8 +56,9 @@
         <span class="brand">L &nbsp; aders</span>
 
         <nav>
-            <a class="nav-btn codepen" target="_blank" href="https://codepen.io/vineethtrv/pen/NWxZqMM"></a>
-            <a class="nav-btn git" target="_blank" href="https://github.com/vineethtrv/css-loader"></a>
+            <a class="nav-btn codepen" target="_blank" href="https://codepen.io/vineethtrv/pen/NWxZqMM"><i  class="ri-codepen-fill"></i></a>
+            <a class="nav-btn git" target="_blank" href="https://github.com/vineethtrv/css-loader"><i  class="ri-github-fill"></i></a>
+            <a class="nav-btn theme" href="javascript:void(0)" onclick="toggleTheme()"><i id="theme-icon" class="ri-sun-fill"></i></a>
         </nav>
     </header>
 
@@ -75,7 +74,7 @@
 
 
     <div class="overlay">
-        <div class="popup">
+        <div class="popup" id="popup">
             <button class="btn-close">&times;</button>
             <div class="showcase"></div>
             <div class="code-content">
@@ -96,7 +95,24 @@
             </div>
         </div>
     </div>
+    <script>
+    const themes = ['light', 'dark', 'dim'];
+    const icons = ['ri-sun-fill', 'ri-moon-fill', 'ri-contrast-fill']; // Light, Dark, Dim Unicons
+    let currentThemeIndex = 0;
 
+    function toggleTheme() {
+      // Update theme index
+      currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+      const selectedTheme = themes[currentThemeIndex];
+
+      // Update color-scheme
+      document.documentElement.setAttribute('color-scheme', selectedTheme);
+
+      // Update icon
+      const themeIcon = document.getElementById('theme-icon');
+      themeIcon.className = `uil ${icons[currentThemeIndex]}`;
+    }
+    </script>
     <script  type="module" src="./js/app.js"></script>
 </body>
 </html>

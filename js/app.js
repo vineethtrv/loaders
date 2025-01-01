@@ -8,9 +8,7 @@ import { GRAPH } from './loaders/graph.js';
 import { OBJECTS } from './loaders/objects.js';
 import { SKELETON } from './loaders/skeleton.js';
 
-
-
-const LOADERS = [...CIRCLE, ...BUBBLE, ...RECT, ...LINE, ...PROGRESS, ...TEXT, ...OBJECTS, ...GRAPH , ...SKELETON ];
+const LOADERS = [...CIRCLE, ...BUBBLE, ...RECT, ...LINE, ...PROGRESS, ...TEXT, ...OBJECTS, ...GRAPH , ...SKELETON, ...BUBBLE];
 
 
 const main = document.getElementById('main');
@@ -71,8 +69,6 @@ document.querySelectorAll('#main .section').forEach(elm => {
         document.querySelector('.overlay').classList.add('in')
     })
 })
-
-
 // close popup
 document.querySelector('.btn-close').addEventListener('click', (e) => {
     document.querySelector('body').classList.remove('pop')
@@ -95,7 +91,7 @@ document.querySelectorAll('.copy').forEach(copyBtn => {
         document.execCommand("copy");
         e.target.textContent = 'Copied';
 
-        setTimeout( time => e.target.textContent = 'Copy' , 300);
+        setTimeout( time => e.target.textContent = 'Copy' , 600);
     })
 });
 
