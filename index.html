@@ -100,7 +100,16 @@
             </div>
         </div>
     </div>
+    <script>
+      const themes = ['light', 'dark', 'dim'];
+    let currentThemeIndex = 0;
 
+    function toggleTheme() {
+      currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+      const selectedTheme = themes[currentThemeIndex];
+      document.documentElement.setAttribute('color-scheme', selectedTheme);
+    }
+    </script>
     <script  type="module" src="./js/app.js"></script>
         <!-- Prism JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
