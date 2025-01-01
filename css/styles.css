@@ -189,8 +189,8 @@ header nav .nav-btn {
   display: inline-block;
   width: 32px;
   height: 32px;
-  background-color: var(--surface4);
-  border: 1px solid hsl(var(--brand-hue) 10% 50% / 15%);
+  background-color: transparent;
+  border: none;
   background-repeat: no-repeat;
   background-size: 110% auto;
   background-position: center;
@@ -202,6 +202,9 @@ header nav .nav-btn {
   font-size: 28px;
   line-height: 32px;
   color: var(--text2);
+}
+header nav .nav-btn a {
+  -webkit-text-stroke: 2px #6200ee;
 }
 header nav .nav-btn + .nav-btn {
   margin-left: 10px;
