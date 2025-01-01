@@ -317,7 +317,8 @@ footer a:hover {
   font-size: 26px;
   font-weight: 400;
   padding: 0;
-  background: #eee;
+  background: transparent;
+  color: var(--surface1);
   border: none;
   outline: 0;
   cursor: pointer;
