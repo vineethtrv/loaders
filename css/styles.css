@@ -367,7 +367,7 @@ footer a:hover {
   border: none;
   background: hsl(var(--brand-hue), var(--brand-saturation), 30%);
   position: absolute;
-  right: 5px;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
   color: #fff;
