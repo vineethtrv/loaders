@@ -93,12 +93,8 @@ document.querySelectorAll('.copy').forEach(copyBtn => {
         selectText(id);
         document.execCommand("copy");
         e.target.textContent = 'Copied';
-        e.target.classList.add('copied');
 
-        setTimeout(() => {
-            e.target.textContent = 'Copy';
-            e.target.classList.remove('copied'); // Revert opacity
-        }, 1000);
+        setTimeout( time => e.target.textContent = 'Copy' , 600);
     })
 });
 
