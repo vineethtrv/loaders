@@ -270,7 +270,7 @@ header nav .nav-btn + .nav-btn {
   }
 }
 footer {
-  background: var(--brand);
+  background: var(--surface2);
   padding: 15px;
   text-align: center;
   color: var(--surface2);
