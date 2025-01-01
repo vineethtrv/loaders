@@ -206,7 +206,7 @@ header nav .nav-btn + .nav-btn {
   margin-left: 10px;
 }
 .brand {
-  color: #fff;
+  color: var(--text1);
   font-size: 32px;
   display: inline-block;
   position: relative;
@@ -216,7 +216,7 @@ header nav .nav-btn + .nav-btn {
   position: absolute;
   left: 20px;
   bottom: 7px;
-  border: 3px solid #fff;
+  border: 3px solid var(--text1);
   border-bottom-color: var(--brand);
   width: 20px;
   height: 20px;
@@ -269,16 +269,16 @@ header nav .nav-btn + .nav-btn {
   }
 }
 footer {
-  background: #0d161b;
+  background: var(--brand);
   padding: 15px;
   text-align: center;
-  color: #ccc;
+  color: var(--surface2);
   width: 100%;
   font-size: 12px;
 }
 footer a {
   font-size: 16px;
-  color: #fff;
+  color: var(--text1);
   transition: 0.2s ease;
   text-decoration: none;
   display: inline-block;
@@ -286,8 +286,8 @@ footer a {
 }
 footer a:active,
 footer a:hover {
-  color: #fff;
-  transform: scale(1.15);
+  color: var(--text1);
+  transform: scale(1.10);
 }
 .overlay {
   position: fixed;
