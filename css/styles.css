@@ -373,7 +373,6 @@ footer a:hover {
   padding: 3px 8px;
   cursor: pointer;
   user-select: none;
-  transition: all 0.3s ease;
 }
 .copy::before {
   content: "";
