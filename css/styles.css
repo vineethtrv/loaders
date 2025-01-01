@@ -194,20 +194,18 @@ header nav .nav-btn {
   background-repeat: no-repeat;
   background-size: 110% auto;
   background-position: center;
-  text-decoration: none;
   border-radius: 50%;
-  margin: 3px;
 }
-header nav .nav-btn.git {
-  background-image: url(../images/git.png);
-}
-header nav .nav-btn.codepen {
-  background-image: url(../images/codepen.png);
+header nav i {
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
 }
 header nav .nav-btn.theme {
   font-size: 18px;
 }
-header nav .nav-btn + .nav-btn + .theme {
+header nav .nav-btn + .nav-btn {
   margin-left: 10px;
 }
 .brand {
