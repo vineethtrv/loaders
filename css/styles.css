@@ -194,6 +194,7 @@ header nav .nav-btn {
   background-repeat: no-repeat;
   background-size: 110% auto;
   background-position: center;
+  text-decoration: none;
   border-radius: 50%;
   margin: 3px;
 }
